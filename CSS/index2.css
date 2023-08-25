@@ -1,0 +1,738 @@
+/*ANIMATION*/
+@keyframes h1a {
+    0% {padding-right: 0;}
+    2.5% {padding-right: 1.5rem;}
+    5% {padding-right: 0;}
+    7.5% {padding-right: 1.5rem;}
+    10% {padding-right: 0;}
+}
+@keyframes carta {
+    0% {transform: rotate(5deg);}
+    5% {transform: rotate(-5deg);}
+    10% {transform: rotate(5deg);}
+    15% {transform: rotate(-5deg);}
+    20% {transform: rotate(5deg);}
+    25% {transform: none;}
+}
+@keyframes ina {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.ina {
+    animation: ina 1s;
+}
+
+/*TOAN CUC*/
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6088a2;
+    margin: 0;
+}
+.flex {
+    display: flex;
+}
+img, video {
+    width: 100%;
+    height: 100%;
+}
+.between {
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;  
+    color: black;
+}
+.box {
+    box-sizing: border-box;
+}
+.default {
+    cursor: default;
+}
+.fix {
+    text-align: center;
+    margin: 1% auto;
+}
+input {
+    border: none;
+    outline: none;
+}
+.decor {
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: 0 0 .5rem #3c3d82;
+}
+
+/*HEADING*/
+h1 {
+    color: white;
+    font-size: 100%;
+    margin-top: 5.5% !important;
+    animation: h1a 5s infinite;
+}
+h4 {
+    margin: 2% 0;
+    color: #3c3d82;
+    cursor: default;
+}
+h5,h6 {
+    margin: 1% auto;
+    text-align: justify;
+    color: black;
+}
+
+/*HEADER*/
+header {
+    background-color: #fde1d3;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+div.banner {   
+    width: 20%;
+}
+nav {
+    width: 80%;
+}
+nav > div:first-child {
+    display: none;
+}
+
+/*TIM KIEM*/
+div.find {
+    width: 300px;
+    border-radius: .5rem;
+    background-color: transparent;
+    position: relative;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    border-radius: .5rem 0 0 .5rem;
+    width: 90%;
+    padding: 5%;
+    transform: translateX(150%);
+}
+div.find > i {
+    cursor: pointer;
+    width: 10%;
+    padding: 6%;
+    text-align: center;
+    background-color: transparent;
+}
+div.find > i:hover {
+    color: brown;
+}
+#find.findin {
+    width: 90%;
+    padding: 5%;
+    transition: .5s;
+    transform: translateX(0);
+}
+
+/*MENU*/
+ul.menu li > a {
+    display: block;
+    padding: 1rem;
+}
+ul.left > li > a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: brown;
+    margin: auto;
+    transition: 1s;
+}
+ul.left > li > a:hover::after {
+    width: 100%;
+}
+
+/*SUBMENU*/
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fde1d3;
+}
+.submenu > li:hover {
+    transform: scale(1.07);
+}
+
+/*MAIN*/
+main {
+    width: 90%;
+    margin: 2% auto;
+}
+div.left {
+    width: 15%;
+}
+div.right {
+    width: 82%;
+    background: linear-gradient(to left,#ffd6a0,#ffbf6b, #ffbf6b);
+    padding: 2%;
+    overflow: hidden;
+}
+
+/*LEFT*/
+div.left > ul {
+    overflow: hidden;
+}
+div.left li > a {
+    background: linear-gradient(to right,#ffd6a0,#ffc88e,#ffbf6b);
+    border-bottom: .1rem solid #ffc88e;
+    padding: 1rem 2.5rem;
+    transition: .5s;
+}
+div.left li:last-child > a {
+    border: none;
+}
+div.left li:hover > a {
+    background: brown;
+    color: white;
+    padding-left: 3.5rem;
+}
+div.left li:first-child::before {
+    content: "BEST Sellers";
+    position: absolute;
+    font-size: .6rem;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(5deg);
+    color: brown;
+    width: 20%;
+    top: 100%;
+    right: 4%;
+    z-index: 1;
+}
+div.left li:first-child::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    box-shadow: .15rem -.15rem .15rem brown;
+    border-style: solid;
+    border-width: 2.2rem 1.3rem .5rem 1.3rem;
+    border-color: rgb(255, 241, 113) rgb(255, 241, 113) transparent rgb(255, 241, 113);
+}
+div.left li:first-child {
+    background-color: #d96c4e;
+    color: white;
+    padding: 10%;
+    font-weight: bold;
+    position: relative;
+}
+
+/*FILTER*/
+.filter {
+    width: 100%;
+    margin-top: 10%;
+}
+.filter > a {
+    display: block;
+    padding: 5%;
+    text-align: center;
+    background: linear-gradient(to right,#ffd6a0,#ffc88e,#ffbf6b);
+    border-bottom: .1rem solid #ffc88e;
+}
+
+/*PRODUCTS*/
+div.items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+div.items:last-child {
+    justify-content: flex-start;
+}
+div.items:last-child > .item {
+    margin: 1%;
+}
+.item {
+    border-radius: .3rem;
+    overflow: hidden;
+    width: 22%;
+    background-color: #ffc88e;
+    margin: 1% 0 2% 0;
+    transition: .3s;
+}
+.item > div {
+    overflow: hidden;
+}
+.item img {
+    transition: transform .3s;
+}
+.item:hover {
+    margin-top: 0;
+}
+.item:hover img {
+    transform: scale(1.1);
+}
+
+/*PAGE*/
+div.pages {
+    justify-content: flex-end;
+}
+div.pages a {
+    background-color: #d96c4e;
+    color: white;
+    border-radius: .2rem;
+    padding: .5% .8%;
+    margin-left: 1%;
+    transition: .25s;
+}
+div.pages a:hover {
+    margin-top: -.5%;
+}
+.active {
+    margin-top: -.5%;
+    background-color: brown !important;
+}
+
+/*FOOTER*/
+footer {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fde1d3;
+}
+footer > div {
+    width: 30%;
+    padding: 1%;
+}
+footer a:hover {
+    color: #d96c4e;
+}
+
+/*DESCRIPTION*/
+.description > div {
+    width: 50%;
+}
+.description h5 {
+    font-weight: normal;
+}
+
+/*FM*/
+.fm > div {
+    margin-bottom: 5%;
+}
+.fm h4 {
+    font-size: 90%;
+}
+.fm h5 {
+    color: #3c3d82;
+}
+.fm h6 {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+/*PRODUCT BOX*/
+.pbox {
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 3;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.pb > i.fa-xmark {
+    position: absolute;
+    top: -4%;
+    right: 3%;
+    border-radius: .5rem;
+    padding: 2% 5%;
+    background-color: #f2c894;
+}
+.pb {
+    background-color: #fde1d3;
+    width: 50%;
+    margin: 7% auto;
+    padding: 3%;
+    border-radius: .5rem;
+    position: relative;
+}
+.bleft {
+    width: 60%;
+}
+.fa-star {
+    color: brown;
+}
+.bright {
+    width: 36%;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+.bright > div {
+    width: 100%;
+}
+.bright > div:first-child {
+    background-color: #ffd6a0;
+    padding: 10% 10% 15% 10%;
+}
+.bright > div:last-child {
+    margin-top: auto;   
+    width: 100%;
+}
+.bright h3, .bright p {
+    font-size: 150%;
+}
+.quan {
+    width: 100%;
+}
+.quan > input:first-child {
+    border-left: .5rem double #f2c894;
+}
+.quan > input:last-child { 
+    border-right: .5rem double #f2c894;
+}
+.bright input {
+    cursor: pointer;
+    padding: 7% 9%;
+    font-weight: bold;
+    background-color: #ffd6a0;
+}
+input[type=number] {
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+i.fa-paper-plane {
+    display: none;
+    font-size: xx-large;
+    position: fixed;
+    z-index: 4;
+    transition: ease-out;
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .banner {
+       display: none; 
+    }
+    h1 {
+        font-size: 2vw;
+        margin-top: 8vw !important;
+    }
+    .item {
+        font-size: 70%;
+    }
+    .policy {
+        flex-wrap: wrap;
+    }
+    .policy > div {
+        width: 100%;
+    }
+    .pb > i.fa-xmark {
+        top: -7%;
+        right: 2%;
+    }
+    .pb {
+        width: 80%;
+        margin: 30% auto;
+    }
+    main {
+        font-size: 2.5vw !important;
+    }
+    /*LEFT*/
+    main.flex {
+        display: block;
+    }
+    div.left {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    div.right {
+        width: 100%;
+    }
+    ul.decor {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    div.left li {
+        width: 50% ;
+        box-sizing: border-box;
+    }
+    div.left li:first-child {
+        text-align: center;
+    }
+    div.left li:last-child > a {
+        border-bottom: .1rem solid #ffc88e;
+    }
+    div.left li:first-child::after {
+        display: none;
+    }
+    div.left li:first-child::before {
+display: none;
+    }
+    div.left li:first-child {
+        padding: 4%;
+        width: 100%;
+    }
+
+    /*PAGE*/
+    div.pages {
+        margin-top: 2%;
+    }
+    div.pages a {
+        padding: 2%;
+    }
+    div.pages a:hover {
+        margin-top: -2%;
+    }
+    .active {
+        margin-top: -2%;
+        background-color: brown !important;
+    }
+    /*TIM KIEM*/
+div.find {
+    width: 200px;
+    height: 80%;
+    margin-top: 2%;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    transform: translateX(160%);
+}
+}
+/*FILTER*/
+.filter {
+    margin-top: 2%;
+}
+.filter > a {
+    padding: 2%;
+}
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 4.1vw;
+    }
+    /*HEADER*/
+    .banner {
+        display:none;
+    }
+    nav {
+        width: 100%;
+    }
+    nav > div:first-child {
+        display: block;
+    }
+    ul.left {
+        display: none;
+        left: 0;
+        top: 40px;
+        position: absolute;
+        width: 100%;
+        background-color: #fde1d3;
+    }
+    main .left > * {
+        font-size: 3vw !important;
+    }
+    header {
+        width: 100%;
+    }
+    ul.left > li > a::after {
+        display: none;
+    }
+    /* PRODUCT*/
+    .item {
+        font-size: 3vw;
+    }
+    .item {
+        margin: 1% auto;
+        width: 48%;
+        flex-direction: column;
+    }
+    
+    /*FOOTER*/
+    footer {
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+    footer > div {
+        width: 100%;
+    }
+    .description > div {
+        margin: auto;
+    }
+    .policy {
+        flex-wrap: wrap;
+    }
+    .policy > div {
+        width: 100%;
+    }
+    .description > h4 {
+        text-align: center;
+    }
+    /*LINE*/
+    h1 {
+        font-size: 2vw;
+        color: white;
+        margin-top: 16% !important;
+        animation: h1a 5s infinite;
+    }
+    /*SUBMENU*/
+    .sub {
+        position: relative;
+    }
+    li.sub::before {
+        content: "";
+        position: absolute;
+        border-width: 2vw;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        top: 25px;
+        right: 16px;
+    }
+    .submenu {
+        position: relative;
+    }
+    .submenu > li > a {
+        padding-left: 3rem !important;
+    } 
+
+    /*PRODUCT BOX*/  
+    .pb > i.fa-xmark {
+        top: -2%;
+        right: 2%;
+    }
+    .pb {
+        width: 100%;
+        margin: 5% auto;
+        top: 10%;
+        padding: 10% 0;
+        border-radius: 0;
+    }
+    .pb > .flex {
+        display: block;
+    }
+    .pb > div > div {
+        width: 80%;
+        margin: auto;
+    }
+    .bright > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bright > div:first-child {
+        margin: 5% auto;
+        padding: 7% 7% 12% 7%;
+    }
+    .bright > div:last-child > * {
+        width: 50%;
+    }
+    .bright h3 {
+        width: 60%;
+        margin: 0;
+    }
+    .bright h3, .bright p {
+        font-size: 5vw;
+    }
+
+    /*LEFT*/
+    main.flex {
+        display: block;
+    }
+    div.left {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    div.right {
+        width: 100%;
+    }
+    ul.decor {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    div.left li {
+        width: 50% ;
+        box-sizing: border-box;
+    }
+    div.left li:first-child {
+        text-align: center;
+    }
+    div.left li:last-child > a {
+        border-bottom: .1rem solid #ffc88e;
+    }
+    div.left li:first-child::before {
+        font-size: 2vw;
+        top: 105%;
+        right: 9%;
+        width: 5%;
+    }
+    div.left li:first-child {
+        padding: 4%;
+        width: 100%;
+    }
+
+    /*PAGE*/
+    div.pages {
+        margin-top: 5%;
+    }
+    div.pages a {
+        padding: 1% 2%;
+    }
+    div.pages a:hover {
+        margin-top: -2%;
+    }
+    .active {
+        margin-top: -2%;
+        background-color: brown !important;
+    }
+    /*TIM KIEM*/
+div.find {
+    width: 200px;
+    height: 80%;
+    margin-top: 2%;
+}
+.inform {
+    top: 125%;
+    left: 0;
+    padding: 5% 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+#find {
+    transform: translateX(160%);
+}
+/*FILTER*/
+.filter {
+    margin-top: 2%;
+}
+.filter > a {
+    padding: 2%;
+}
+}

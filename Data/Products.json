@@ -1,0 +1,145 @@
+[{
+    "category":"BEST SELLERS",
+    "products":
+        [{
+            "i": "./Media/bs1.jpg",
+            "n": "Rise & Shine",
+            "p": "3.000.000"
+        },{
+            "i": "./Media/bs2.jpg",
+            "n": "Red Love",
+            "p": "1.700.000"
+        },{
+            "i": "./Media/bs3.jpg",
+            "n": "Summer Sun",
+            "p": "1.800.000"
+        },{
+            "i": "./Media/bs4.jpg",
+            "n": "Nostalgic Autumn",
+            "p": "5.500.000"
+        },{
+            "i": "./Media/bs5.jpg",
+            "n": "Flower Square",
+            "p": "5.000.000"
+        }]
+    },{
+        "category":"BÓ HOA",
+        "products":
+        [{
+            "i": "./Media/hb1.jpg",
+            "n": "Little Roses",
+            "p": "5.500.000"
+        },{
+            "i": "./Media/hb2.jpg",
+            "n": "Midnight Story",
+            "p": "2.500.000"
+        },{
+            "i": "./Media/hb3.jpg",
+            "n": "Colorful Life",
+            "p": "900.000"
+        },{
+            "i": "./Media/hb4.jpg",
+            "n": "Scentsation",
+            "p": "1.000.000"
+        },{
+            "i": "./Media/hb5.jpg",
+            "n": "Sexy Floral",
+            "p": "800.000"
+        }]
+    },{
+        "category":"HỘP HOA",
+        "products":
+    [{
+        "i": "./Media/hh1.jpg",
+        "n": "Petals Box",
+        "p": "1.250.000"
+    },{
+        "i": "./Media/hh2.jpg",
+        "n": "Pinky Garden",
+        "p": "3.000.000"
+    },{
+        "i": "./Media/hh3.jpg",
+        "n": "Pinkie Sweet",
+        "p": "1.500.000"
+    },{
+        "i": "./Media/hh4.jpg",
+        "n": "Pansy Paradise",
+        "p": "5.000.000"
+    },{
+        "i": "./Media/hh5.jpg",
+        "n": "Magic Burst",
+        "p": "2.000.000"
+    }]
+    },{
+        "category":"GIỎ HOA",
+        "products":
+        [{
+            "i": "./Media/hg1.jpg",
+            "n": "Your lovely Petals",
+            "p": "5.000.000"
+        },{
+            "i": "./Media/hg2.jpg",
+            "n": "Floral Festival",
+            "p": "2.000.000"
+        },{
+            "i": "./Media/hg3.jpg",
+            "n": "Pastel Lover",
+            "p": "1.500.000"
+        },{
+            "i": "./Media/hg4.jpg",
+            "n": "Smile on Earth",
+            "p": "5.000.000"
+        },{
+            "i": "./Media/hg5.jpg",
+            "n": "Festive Holiday",
+            "p": "720.000"
+        }]
+    },{
+        "category":"HOA MỪNG",
+        "products":
+        [{
+            "i": "./Media/hm1.jpg",
+            "n": "Glory",
+            "p": "6.400.000"
+        },{
+            "i": "./Media/hm2.jpg",
+            "n": "Way to go",
+            "p": "2.700.000"
+        },{
+            "i": "./Media/hm3.jpg",
+            "n": "New Chapter",
+            "p": "4.500.000"
+        },{
+            "i": "./Media/hm4.jpg",
+            "n": "Surprise",
+            "p": "2.500.000"
+        },{
+            "i": "./Media/hm5.jpg",
+            "n": "Cheers to You",
+            "p": "2.000.000"
+        }]
+    },{
+        "category":"CHIA BUỒN",
+        "products":
+        [{
+            "i": "./Media/cb1.jpg",
+            "n": "In Memoriam",
+            "p": "3.200.000"
+        },{
+            "i": "./Media/cb2.jpg",
+            "n": "With Love",
+            "p": "3.200.000"
+        },{
+            "i": "./Media/cb3.jpg",
+            "n": "Goodbye",
+            "p": "3.200.000"
+        },{
+            "i": "./Media/cb4.jpg",
+            "n": "Peace be with You",
+            "p": "3.200.000"
+        },{
+            "i": "./Media/cb5.jpg",
+            "n": "See you in Heaven",
+            "p": "3.200.000"
+        }]
+}]
